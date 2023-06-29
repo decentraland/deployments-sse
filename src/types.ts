@@ -7,6 +7,10 @@ import type {
   IMetricsComponent,
 } from "@well-known-components/interfaces"
 import { metricDeclarations } from "./metrics"
+import { ITaskQueue } from "./adapters/sqs"
+import { DeploymentToSqs } from "@dcl/schemas/dist/misc/deployments-to-sqs"
+import { IRunnerComponent } from "./adapters/runner"
+import { Emitter } from "mitt"
 
 export type GlobalContext = {
   components: BaseComponents
@@ -19,6 +23,9 @@ export type BaseComponents = {
   server: IHttpServerComponent<GlobalContext>
   fetch: IFetchComponent
   metrics: IMetricsComponent<keyof typeof metricDeclarations>
+  taskQueue: ITaskQueue<DeploymentToSqs>
+  runner: IRunnerComponent
+  deploymentsByPointer: Emitter<Record<string /* pointer */, DeploymentToSqs>>
 }
 
 // components used in runtime

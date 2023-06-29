@@ -20,4 +20,14 @@ export async function main(program: Lifecycle.EntryPointParameters<AppComponents
 
   // start ports: db, listeners, synchronizations, etc
   await startComponents()
+
+  const logger = components.logs.getLogger('main-loop')
+
+  components.runner.runTask(async (opt) => {
+    while (opt.isRunning) {
+      await components.taskQueue.consumeAndProcessJob(async (job, message) => {
+        logger.log("Deployment " + JSON.stringify(job))
+      })
+    }
+  })
 }
