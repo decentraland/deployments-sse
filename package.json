@@ -2,6 +2,7 @@
   "name": "template-server",
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "lint:check": "echo 1",
     "start": "node --trace-warnings --abort-on-uncaught-exception --unhandled-rejections=strict dist/index.js",
     "test": "jest --forceExit --detectOpenHandles --coverage --verbose"
   },
