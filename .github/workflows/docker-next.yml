@@ -11,5 +11,5 @@ jobs:
     with:
       service-name: deployments-sse
       dockerfile-url: https://raw.githubusercontent.com/decentraland/platform-actions/main/Dockerfile.alpine
-      deployment-environment: dev
+      deployment-environment: dev prd
     secrets: inherit
