@@ -299,10 +299,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@dcl/schemas@^7.4.1":
-  version "7.4.1"
-  resolved "https://registry.yarnpkg.com/@dcl/schemas/-/schemas-7.4.1.tgz#f2209e7be165ec445bc428bfe35f7a236f5429ae"
-  integrity sha512-gYqhzU1q7+XpME+oF1HrzuVxM6fw+EvAN8M5HVwppyHOthy6ortNMOmMhspIQ8eXNAwGmwxKlBjUM2jh0qNy5Q==
+"@dcl/schemas@^9.6.0":
+  version "9.6.0"
+  resolved "https://registry.yarnpkg.com/@dcl/schemas/-/schemas-9.6.0.tgz#e5e02166e182063577d997019d4a1dad237fc8d2"
+  integrity sha512-k2qfX00Zs7FMT1Ou2dZYZwayK4Ru11IoC8/iSq9Xn81HLcrwzM/LEIBAjDu2fE8bz7U84osBnPgJYs1DG+OV2Q==
   dependencies:
     ajv "^8.11.0"
     ajv-errors "^3.0.0"
